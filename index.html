@@ -1,0 +1,465 @@
+<!-- Meditating Circle -->
+<div id="circlePage" class="container">
+  <div class="row">
+    <div class="col">
+      <div class="alert alert-info" role="alert">
+        <center id="Msg"> Hey there! Let's unwind first with a simple breathing exercise...
+        </center>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+
+  <a href="#home" class="reset-a">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="outerbox">
+        <div class="inner-circle">\<div class="meditation-text meditation-text-style">
+                </div>
+        </div>
+
+        <div class="outer-circle"> <!-- siblings --> 
+        </div>
+             
+    </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+  <div class="row mt-3">
+    <div class="col">
+      <div class="alert alert-info" role="alert">
+        <center id="Msg"> When you're ready to move on... click your circle
+        </center>
+      </div>
+    </div>
+  </div>
+  <!--Warning-->
+  <div class="container my-3">
+    <footer class="text-center text-lg-start" style="background-color: #F14A6D;">
+      <!-- Copyright -->
+      <div class="text-center text-white p-3" style="background-color:F14A6D;">
+        If you are experiencing a mental health emergency please call 911 or go to your closest emergency room.
+      </div>
+    </footer>
+  </div>
+
+  <!-- <hr> -->
+</div>
+<!-- HOME-->
+<!-- Navigation -->
+<div class="sticky-top" id="nav-bar">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #CFF4FC;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://www.tc.columbia.edu/studentwellness/"> <img src="https://yt3.ggpht.com/ytc/AKedOLRLTrd3VITt99kRQllyvWRxjwKzefWkBE-g2ACByg=s900-c-k-c0x00ffffff-no-rj" width="60" height="54">
+        Return to the TC Wellness Page </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="home" href="#home" onclick="homePageLoad()">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="helpers" href="#helpers" onclick="helpersPageLoad()">Helpers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="resources" onclick="resourcesPageLoad()">Resources </a>
+          </li>
+        </ul>
+        <!--searchbar-->
+        <div class="controls">
+          <input type="search" placeholder="Search" aria-label="Search" onkeypress="onEnterKey(event)" id="search">
+          <button onclick="searchFunction()">Search</button>
+          </form>
+        </div>
+      </div>
+  </nav>
+</div>
+
+<div id="homePage" class="container">
+  <a name="home"></a>
+  <div class="container">
+    <div class="row my-5">
+      <div class="col">
+        <h2 class="text-center mb-5">Welcome</h2>
+        <p class="text-center">Mental health experts agree that addressing mental wellness and happiness is vital in today’s fast moving world.  TC’s Wellness page provides a variety of resources and tools to allow students to  address and improve their mental health from the comfort of their own home. </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <img src="https://images.squarespace-cdn.com/content/v1/5d43961bc64b760001299458/1569347144569-65XVZW404L0ULQG0VLUE/helping-vs-enabling-addiction?format=1500w" class="card-img-top" alt="picture of helping hand">
+          <div class="card-body">
+            <h5 class="card-title">Helpers</h5>
+            <p class="card-text">Some useful widgets to help me with the common struggles.</p>
+            <a href="#helpers" class="btn btn-primary" onclick="helpersPageLoad()">Go to Helpers</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <img src="https://aspa-usa.org/wp-content/uploads/2015/06/books.jpg" class="card-img-top" alt="picture of books">
+          <div class="card-body">
+            <h5 class="Resources">Resources</h5>
+            <p class="card-text">Some places in Columbia and elsewhere I can reach out for more help.</p>
+            <a href="#resources" class="btn btn-primary" onclick="resourcesPageLoad()">Go to Resources</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Warning-->
+  <div class="container my-3">
+    <footer class="text-center text-lg-start" style="background-color: #F14A6D;">
+      <!-- Copyright -->
+      <div class="text-center text-white p-3" style="background-color:F14A6D;">
+        If you are experiencing a mental health emergency please call 911 or go to your closest emergency room.
+      </div>
+    </footer>
+  </div>
+  <!-- <hr> -->
+</div>
+
+<!--HELPERS-->
+<div id="helpers-page">
+  <a name="helpers"></a>
+  <div class="container mb-4">
+    <div class="row my-5">
+      <div class="col">
+        <h2 class="text-center pt-5 mb-5">Helpers</h2>
+        <p class="text-center">Quality sleep and organizational skills are strongly correlated with mental clarity and performance. Use the following apps below to help reduce stress and improve productivity.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- To do List-->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="alert alert-info" role="alert">
+          <h4>
+            <center>Something to Help Me Organize</center>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-4">
+    <div class="row">
+      <div class="col">
+        <p class="text-center"> You have <span id="remaining-tasks">0</span> tasks left todo!</p>
+        <ul class="list-group" id="task-list">
+          <!--
+        <li class="list-group-item disabled completed-task" aria-disabled="true">
+          <input class="form-check-input me-1" checked="true" type="checkbox" value="" aria-label="...">
+          A completed task
+        </li>
+
+        <li class="list-group-item" aria-disabled="false">
+          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+          Task
+        </li>
+
+        <li class="list-group-item" aria-disabled="false">
+          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+          Task
+        </li>
+-->
+          <li class="list-group-item" aria-disabled="false">
+            <div class="row">
+              <div class="col-12">
+                <input type="text" id="input-todo" class="form-control" placeholder="What Do I Need to Do?" aria-label="Text input">
+              </div>
+            </div>
+            <div class="row mt-3 text-center">
+              <div class="col-12">
+                <button onclick="addTodos()" type="submit" class="btn btn-primary mb-3" id="add-task-button"> Add Task</button>
+                <button onclick="markAllComplete()" type="submit" class="btn btn-primary mb-3" id="add-task-button"> Mark All Complete </button>
+                <button onclick="deleteItem()" type="submit" class="btn btn-danger mb-3" id="add-task-button"> Delete Completed Task</button>
+              </div>
+          </li>
+      </div>
+    </div>
+  </div>
+
+  <!--Sounds to sleep to: -->
+
+  <!--Player inspired by: https://devsnap.me/javascript-music-players-->
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="alert alert-info" role="alert">
+          <h4>
+            <center>Something to Help Me Slumber</center>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <center> If you're having some trouble falling asleep, why not try listening to some relaxing ambience, guided meditation monolouges, or an interesting audiobook? </center>
+  </div>
+
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a062562745.js" crossorigin="anonymous"></script>
+    <title>MP3 Player</title>
+    <link rel=stylesheet href="style.css" media=all>
+  </head>
+
+  <body id="Layout">
+
+    <!--This should play an error sound and display a popup message if the audio file is not playable in the user's browser.-->
+    <audio id="myAudio" ontimeupdate="onTimeUpdate()">
+      <source id="source-audio" src="" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="player-ctn">
+      <div class="infos-ctn">
+        <div class="timer">00:00</div>
+        <div class="title"></div>
+        <div class="duration">00:00</div>
+      </div>
+      <div id="myProgress">
+        <div id="myBar"></div>
+      </div>
+      <div class="btn-ctn">
+        <div class="btn-action first-btn" onclick="previous()">
+          <div id="btn-faws-back">
+            <i class='fas fa-step-backward'></i>
+          </div>
+        </div>
+        <div class="btn-action" onclick="rewind()">
+          <div id="btn-faws-rewind">
+            <i class='fas fa-backward'></i>
+          </div>
+        </div>
+        <div class="btn-action" onclick="toggleAudio()">
+          <div id="btn-faws-play-pause">
+            <i class='fas fa-play' id="icon-play"></i>
+            <i class='fas fa-pause' id="icon-pause" style="display: none"></i>
+          </div>
+        </div>
+        <div class="btn-play" onclick="forward()">
+          <div id="btn-faws-forward">
+            <i class='fas fa-forward'></i>
+          </div>
+        </div>
+        <div class="btn-action" onclick="next()">
+          <div id="btn-faws-next">
+            <i class='fas fa-step-forward'></i>
+          </div>
+        </div>
+        <div class="btn-mute" id="toggleMute" onclick="toggleMute()">
+          <div id="btn-faws-volume">
+            <i id="icon-vol-up" class='fas fa-volume-up'></i>
+            <i id="icon-vol-mute" class='fas fa-volume-mute' style="display: none"></i>
+          </div>
+        </div>
+      </div>
+      <div class="playlist-ctn"></div>
+    </div>
+    <script src=app.js></script>
+  </body>
+
+  <!--Warning-->
+  <div class="container my-3">
+    <footer class="text-center text-lg-start" style="background-color: #F14A6D;">
+      <!-- Copyright -->
+      <div class="text-center text-white p-3" style="background-color:F14A6D;">
+        If you are experiencing a mental health emergency please call 911 or go to your closest emergency room.
+      </div>
+    </footer>
+  </div>
+</div>
+
+<!-- RESOURCES-->
+<div id="resources-page">
+  <a name="resources"></a>
+  <div class="container">
+    <a name="resources"></a>
+    <div class="row my-5">
+      <div class="col">
+        <h2 class="text-center pt-5 mb-5">Resources</h2>
+        <p class="text-center">With increasing challenges, we understand that mental health resources are needed more than ever. TC Wellness has categorized a variety of resources by topic:
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--FAQ-->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="alert alert-info" role="alert">
+          <h4>
+            <center>Extra Resources for Me</center>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-4">
+        <div class="accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                Counseling Resources
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                Columbia Counseling and Psychological Services (CPS) offers <a href="https://health.columbia.edu/content/counseling-and-psychological-services"> a range of emotional and mental health support tools and resources. </a> When experiencing an urgent mental health concern, call CPS at 212-854-2878, which is available 24/7, to reach a licensed mental health professional.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Surviving Stressful Workloads
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                Columbia Health works with students, faculty, and staff to develop initiatives designed to support members of the campus community.
+
+                To speak to someone about managing stress:
+                <ol>
+                  <li>Schedule an appointment with a mental health professional at Counseling and Psychological Services by calling 212-854-2878</li>
+                  <li><a href="https://cas.columbia.edu/cas/login?service=https%3a%2f%2fsecure.health.columbia.edu">Schedule an appointment online </a> with a health care provider at Medical Services or call 212-854-7426</li>
+                  <li>Contact Alice! Health Promotion at 212-854-5453 or alice@columbia.edu</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Mindfulness & Meditation
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                Mindfulness and meditation are approaches to managing stress, anxiety, and depression.
+                <ol>
+                  <li>Columbia offers <a href="https://www.studenthealth.cuimc.columbia.edu/outreach-and-programs/well-being-and-health-promotion-programs/mindfulness-meditation">opportunities </a> to practice meditation through CUIMC Student Health on Haven.</li>
+                  <li><a href="https://www.youtube.com/watch?v=X36j3KXL1as">Listen </a> to a loving kindness meditation led by Dr. Aisha Holder of Columbia University Counseling and Psychological Services.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                Trauma And Sexual Violence
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+              <div class="accordion-body">
+                The resources below deal with helping survivors of traumatic experiences of all kinds, including sexual or other physical violence, harassment, or discrimination.
+                <ol>
+                  <li><a href="https://health.columbia.edu/content/sexual-violence-response"> Sexual Violence Response </a></li>
+                  <li><a href="https://health.columbia.edu/services/trauma-support"> Trauma Support </a></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                Covid-19 and Mental Health
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+              <div class="accordion-body">
+                There are many ways in which the recent pandemic has affected the mental health of Columbia students. Here are some articles on the impact many people like you may be experiencing.
+                <ol>
+                  <li><a href="https://magazine.columbia.edu/article/mental-weight-covid-19">The Mental Weight of Covid-19 </a></li>
+                  <li><a href="https://www.publichealth.columbia.edu/public-health-now/news/covid-19-pandemic-even-mild-disease-impacts-mental-health">Covid-19 Symptoms affect Mental Health </a></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                Suicide Prevention
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+              <div class="accordion-body">
+                Columbia offers many resouces and hotlines to deal with possible thoughts of suicide or self harm. Find a full list <a href="https://childadolescentpsych.cumc.columbia.edu/articles/suicide-prevention-resources"> here. </a>
+                <ol>
+                  <li><a href="https://www.sprc.org/resources-programs">Suicide Prevention Research Center </a></li>
+                  <li><a href="https://cssrs.columbia.edu/the-columbia-scale-c-ssrs/about-the-scale/"> The Columbia-Suicide Severity Rating Scale (C-SSRS)</a></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Warning-->
+  <div class="container my-3">
+    <footer class="text-center text-lg-start" style="background-color: #F14A6D;">
+      <!-- Copyright -->
+      <div class="text-center text-white p-3" style="background-color:F14A6D;">
+        If you are experiencing a mental health emergency please call 911 or go to your closest emergency room.
+      </div>
+    </footer>
+  </div>
+</div>
+ <!--chat box(source: https://bbbootstrap.com/snippets/bootstrap-floating-popup-online-chat-form-32760837-->
+<div id="chat-box">
+  <input type="checkbox" id="check">
+  <label class="chat-btn" for="check">
+    <i class="fas fa-comment-alt"></i>
+  </label>
+  <div class="wrapper">
+    <div class="header">
+      <h6>Speak to a licensed professional</h6>
+    </div>
+    <div>
+      <div class="text-left p-2">
+        <span id="clinician_response">Please fill out the form to start the chat!</span>
+      </div>
+      <div class="chat-form">
+        <textarea id="user_response" class="form-control"></textarea>
+        <button class="btn btn-success btn-block" onclick="chatSubmitFunction()">Submit</button>
+      </div>
+    </div> 
+  </div>
+</div>
+          

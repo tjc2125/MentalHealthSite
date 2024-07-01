@@ -1,0 +1,385 @@
+:root {
+       --time: 8s;
+       }
+
+.completed-task {
+  text-decoration: line-through;
+}
+
+#Msg {
+  font-family: cursive;
+  font-size: 1.6vw;
+}
+
+.outerbox {
+  background: #0b0b31;
+  height: 40.125vw;
+  width: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-name: outerbox;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@keyframes outerbox {
+  0% {
+    background: #0b0b31;
+  }
+  50% {
+    background: #6495ed;
+  }
+  100% {
+    background: #0b0b31;
+  }
+}
+
+.inner-circle {
+            width: 500px;
+            height: 500px;
+            border-radius: 100%;
+            background-color: aquamarine;
+            position: absolute;
+            z-index: 1;
+            animation-duration: var(--time);
+            animation-timing-function: ease-in-out;
+            animation-name: innercircle;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes innercircle {
+            0% {
+                transform: scale(0.2);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(0.2);
+            }
+        }
+
+        .outer-circle {
+            width: 500px;
+            height: 500px;
+            border-radius: 100%;
+            background-color: #0b0b31;
+            position: absolute;
+            animation-duration: var(--time);
+            animation-name: outercircle;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            opacity: 0;
+            animation-delay: calc(var(--time)/2);
+        }
+
+        @keyframes outercircle {
+            0% {
+                opacity: 1;
+                transform: scale();
+            }
+
+            50% {
+                transform: scale(8);
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+                transform: scale(8);
+            }
+        }
+
+.meditation-text:before {
+  animation-name: breathetext;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  font-family: cursive;
+  font-size: 3.90625vw;
+  content: "Take your time and follow this circle...";
+  animation-delay: 8s;
+}
+
+.meditation-text-style {
+  text-align: center;
+  margin: 11.75vw 0vw 0vw 0vw;
+}
+
+@keyframes breathetext {
+  0% {
+    content: "breathe in";
+    font-family: cursive;
+    font-size: 7.5vw;
+  }
+
+  50% {
+    content: "breathe in";
+    font-family: cursive;
+    font-size: 7.5vw;
+  }
+
+  75% {
+    content: "breathe out";
+    font-family: cursive;
+    font-size: 7.2vw;
+  }
+
+  100% {
+    content: "breathe out";
+    font-family: cursive;
+    font-size: 7.2vw;
+  }
+  }
+}
+
+/*I had two "breathe ins" and two "breathe outs" in the keyframes because the content was transitioning too fast. */
+
+.reset-a,
+.reset-a:hover,
+.reset-a:link,
+.reset-a:visited,
+reset-a:active {
+  text-decoration: inherit;
+  color: black;
+}
+
+/* I wanted the meditation box's anchor to look different from the rest of the anchors. I wanted to keep the text black so I tried to change the style of it. I found the solution here: http://www.learningaboutelectronics.com/Articles/How-to-style-an-anchor-tag-with-CSS.php */
+
+.HELPERS {
+  text-align: right;
+}
+
+.HELPERS A {
+  text-align: right;
+}
+
+/* 'Sounds to Sleep to' Audio Player */ 
+#Layout{
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+/*Progress bar*/
+#myProgress {
+  width: 35vw;
+  background-color: #d9d9f2; 
+  cursor: pointer;
+  border-radius: 1vw;
+  margin-left: 1.5vw;
+}
+
+#myBar {
+  width: 0%;
+  height: 0.5vw;
+  background-color: #282828;
+  border-radius: 1vw;
+}
+/*Button effects*/
+.logo {
+  fill: red;
+}
+
+.btn-action{
+  cursor: pointer;
+  padding-top: 1vw;
+  width: 3.5vw;
+}
+
+.btn-ctn, .infos-ctn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.infos-ctn{
+padding-top: 3vw;
+}
+
+.btn-ctn > div {
+ padding: 1vw;
+ margin-top: 2vw;
+ margin-bottom: 2vw;
+}
+
+.infos-ctn > div {
+ margin-bottom: 4vw;
+ color: #282828;
+}
+
+.first-btn{
+  margin-left: 1.5vw;
+}
+
+.duration{
+  margin-left: 1vw;
+}
+
+.title{
+  margin-left: 1vw;
+  width: 20vw;
+  text-align: center;
+  font-size: 1.5vw;
+}
+/*Backgrounds: Player, buttons, e.t.c.*/
+.player-ctn{
+  border-radius: 10px;
+  width: 40vw;
+  padding: 1vw;
+  background-image: url('https://64.media.tumblr.com/7bddabde3cd98e21862d7667674825a8/tumblr_o7rbpihw6r1vt7tqgo1_1280.jpg');
+  margin:auto;
+  margin-top: 10vw;
+}
+
+.playlist-track-ctn{
+  display: flex;
+  background-color: #FFDBE9;
+  margin-top: 0.5vw;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.playlist-track-ctn > div{
+  margin:10px;
+}
+.playlist-info-track{
+  width: 80%;
+}
+.playlist-info-track,.playlist-duration{
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  color: #282828;
+  font-size: 14px;
+  pointer-events: none;
+}
+.playlist-ctn{
+   padding-bottom: 1vw;
+}
+.active-track{
+  background: #e75480;
+  color: white !important;
+  font-weight: bold;
+  
+}
+
+.active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{
+  color: white !important;
+}
+
+
+.playlist-btn-play{
+  pointer-events: none;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+}
+.fas{
+  color: #282828;
+  font-size: 20px;
+}
+.chat-btn {
+  position: fixed;
+  right: 1px;
+  bottom: 30px;
+  cursor: pointer;
+}
+
+.chat-btn .close {
+  display: none;
+}
+
+.chat-btn i {
+  transition: all 0.9s ease;
+}
+
+#check:checked ~ .chat-btn i {
+  display: block;
+  pointer-events: auto;
+  transform: rotate(180deg);
+}
+
+#check:checked ~ .chat-btn .comment {
+  display: none;
+}
+
+.chat-btn i {
+  font-size: 22px;
+  color: #fff !important;
+}
+
+.chat-btn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #008080;
+  color: #fff;
+  font-size: 22px;
+  border: none;
+}
+
+.wrapper {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  width: 300px;
+  background-color: #c7fcff;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+#check:checked ~ .wrapper {
+  opacity: 1;
+}
+
+.header {
+  padding: 10px;
+  background-color: #008080;
+  border-radius: 5px 5px 0px 0px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.chat-form {
+  padding: 20px;
+}
+
+.chat-form input,
+textarea,
+button {
+  margin-bottom: 10px;
+}
+
+.chat-form textarea {
+  width: 260px;
+  height: 100px;
+}
+
+.form-control:focus,
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn,
+.btn:focus,
+.btn:hover {
+}
+
+.navbar navbar-light {
+  z-index: 0
+}
+
+.nav-link active {
+  z-index: 1
+}
+#check {
+  display: none !important;
+}
+
+
