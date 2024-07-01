@@ -1,6 +1,6 @@
 Web Design 101
 Sourced from my grad school group project!
-Original CodePen [here]([url](https://codepen.io/tjc2125/pen/gOJJXda))
+Original CodePen ([url](https://codepen.io/tjc2125/pen/gOJJXda))
 
 Featured: 
 CSS keyframes for cool animation & fading effects (for breathing circle)
